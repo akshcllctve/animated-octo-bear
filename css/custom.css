@@ -4,6 +4,21 @@ body {
 
   padding-top: 0px;
   color: #ffefe5;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+a {
+text-decoration: none;
+
+
+}
+
+.fa { 
+  color: #666666;
+  background: url(water.jpg);
+  background-size: cover;
 
 }
 
@@ -15,6 +30,9 @@ background: url(cover.jpg) no-repeat;
 background-size: cover;
 }
 
+.logo {
+  padding: 20px 0 0 20px;
+}
 .social a {
 color: #ffefe5;
 text-decoration: none;
@@ -42,28 +60,7 @@ text-decoration: underline;
 cursor: auto;
 }
 
-.navbar-default {
-background-color:  #ffffff;
-  border: none;
-}
 
-.navbar-default .navbar-nav > li > a {
-  color: #ed1556;
-}
-.navbar-default .navbar-brand {
-  color:#ed1556;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-{
-  color:#ffefe5;
-  background-color: #ed1556;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color:#ffefe5;
-  background-color: #5515ed;
-}
 .pattern {
   background-image: url('/img/pback.jpg');
 }
@@ -497,17 +494,53 @@ h6,
 /* navbar adjustment */
 
 .navbar {
+  font-size: 12px;
   margin-bottom: 0px;
+    letter-spacing: 4px;
+  font-weight: 400;
+
+
 }
 .navbar-brand {
   padding: 10px;
+
 }
 
-a {
-text-decoration: none;
-font-size: 18px;
+
+
+.navbar-default {
+background-color:  #ffffff;
+  border: none;
+
 }
 
+.navbar-default .navbar-nav > li > a {
+  color:#231f20;
+  background-color: #ffffff;
+ 
+}
+.navbar-default .navbar-brand {
+  color:#231f20;
+  background-color: #ffffff;
+ 
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color:#231f20;
+  background-color: #ffffff;
+  font-weight: 700;
+
+
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+   color:#231f20;
+  background-color: #ffffff;
+  font-weight: 700;
+
+
+}
 
 
 .headline {
