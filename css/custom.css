@@ -133,7 +133,27 @@ a#the:focus{
 }
 
 #aboutthewoman {
-  background-image: url('/img/k_4a.jpg');
+  background-image: url('/img/aboutthewoman.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  display: block;
+
+
+}
+
+#aboutthebrand {
+  background-image: url('/img/aboutthebrand.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  display: block;
+
+
+}
+
+#aboutthebeauty {
+  background-image: url('/img/aboutthebeauty.');
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
