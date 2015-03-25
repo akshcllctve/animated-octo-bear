@@ -9,6 +9,7 @@ body {
 
 }
 
+
 a {
 text-decoration: none;
 
@@ -114,7 +115,7 @@ a#the:focus{
   background-size: cover;
   text-align: center;
   color: #ffffff;
-    display: block;
+  display: block;
 
 }
 
@@ -128,6 +129,16 @@ a#the:focus{
   margin-bottom: 0px;
     letter-spacing: 4px;
   font-weight: 400;
+
+}
+
+#aboutthewoman {
+  background-image: url('/img/k_4a.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  display: block;
+
 
 }
 
