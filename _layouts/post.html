@@ -59,39 +59,40 @@
     <div class="row">
       <div class="col-md-3">
         <div class="blog-index">  
-        <h2>Blog Archive</h2>
+        <h2>Blog Archive</h2><br>
           <ul>
           {% for post in site.posts %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
-             -
+             <br>
           {% endfor %}
         </ul>
-    
-     
-
 
 
         </div>
+
+        {% include postleft.html %}
+
       </div>
-      <div class="col-md-9 white">
+      <div class="col-md-6 white">
 
          {{ content }}
-<div id="share"><!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_sharing_toolbox"></div></div>
+
+        <div id="share"><!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+      {% include postright.html %}
+      </div>
+
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid center padded-med" id="watercolor">
-  <div class="row">
-    <div class="col-md-12">
-      <p class="white-font">401 N 3RD STREET • SUITE 663 • MINNEAPOLIS, MN 55401
-612.200.9613 • SALES@KILLIANJEWELRY.COM </p>
-    </div>
-  </div>
-</div>
+
+{% include footer.html %}
     
      
 
