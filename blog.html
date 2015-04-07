@@ -8,9 +8,23 @@ description: KJ Blog
 <div class="container-fluid white">
   <div class="container padded-med">
     <div class="row">
-      <div class="col-md-3">
+      
+            <div class="col-md-6 col-md-offset-1 white col-md-push-3">
+
+         {% for post in site.posts limit:1%}
+    
+           <li>
+                {{ post.content }}
+                            <a href="{{ post.url }}#share">Click to share and comment</a>
+
+              </li>
+              
+              
+                  {% endfor %}
+      </div>
+       <div class="col-md-3 col-md-pull-6">
         <div class="blog-index">  
-        <h2>Blog Archive</h2><br>
+        <h2>Articles</h2><br>
           <ul>
           {% for post in site.posts %}
             <li>
@@ -24,22 +38,6 @@ description: KJ Blog
         </div>
     {% include postleft.html %}
       </div>
-      <div class="col-md-6 white">
-
-         {% for post in site.posts limit:1%}
-    
-           <li>
-                {{ post.content }}
-                            <a href="{{ post.url }}#share">Click to share and comment</a>
-
-              </li>
-              
-              
-                  {% endfor %}
-      </div>
-      <div class="col-md-3">
-        {% include postright.html %}
-    </div>
   </div>
 </div>
 

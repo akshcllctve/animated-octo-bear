@@ -26,25 +26,62 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff"> 
 
+
+
 {% include analytics.html %}
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551da6f20f63ea3b" async="async"></script>
+
 
     </head>
 <body>
 
 
-
 <div class="container-fluid white">
   <div class="container">
     <div class="row">
-      <div class="col-md-5">
+      
+      <div class="col-md-7 col-md-push-5 hidden-xs hidden-sm">
+
+  <ul class="nav navbar-nav navbar-right social">
+          <li><a href="#"><i class="fa fa-facebook fa-5x" id="socialwater"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-5x" id="socialwater"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram fa-5x" id="socialwater"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest fa-5x" id="socialwater"></i></a></li>
+               
+      </ul>
+
+
+      </div>
+
+       <div class="col-md-7 col-md-push-5 visible-sm">
+        <br>
+
+<ul class="nav navbar-nav navbar-right social">
+          <a href="#"><i class="fa fa-facebook fa-2x" id="socialwater"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x" id="socialwater"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x" id="socialwater"></i></a>
+                    <a href="#"><i class="fa fa-pinterest fa-2x" id="socialwater"></i></a>
+               
+</ul>
+
+      </div>
+  
+      <div class="col-sm-7 col-md-push-5 visible-xs">
+<br>
+
+          <a href="#"><i class="fa fa-facebook fa-2x" id="socialwater"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x" id="socialwater"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x" id="socialwater"></i></a>
+                    <a href="#"><i class="fa fa-pinterest fa-2x" id="socialwater"></i></a>
+               
+
+
+      </div>
+      <div class="col-md-5 col-md-pull-7">
         <a href="/"><img src="/img/coolgrey.jpg" class="img-responsive logo"></a>
       </div>
-      <div class="col-md-7">
 
-      {% include social.html %}
-
-
-      </div>
     </div>
     <div class="row">
       <div class="col-md-12">{% include navigation.html %} </div>
@@ -52,14 +89,24 @@
     </div>
   </div>
 </div>
-
  
 <div class="container-fluid white">
   <div class="container padded-med">
     <div class="row">
-      <div class="col-md-3">
+      
+       <div class="col-md-6 col-md-offset-1 white col-md-push-3">
+
+         {{ content }}
+
+        <div id="share">
+
+<div class="addthis_sharing_toolbox"></div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-md-pull-6">
         <div class="blog-index">  
-        <h2>Blog Archive</h2><br>
+        <h2>Articles</h2><br>
           <ul>
           {% for post in site.posts %}
             <li>
@@ -74,17 +121,6 @@
 
         {% include postleft.html %}
 
-      </div>
-      <div class="col-md-6 white">
-
-         {{ content }}
-
-        <div id="share"><!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="addthis_sharing_toolbox"></div>
-        </div>
-      </div>
-      <div class="col-md-3">
-      {% include postright.html %}
       </div>
 
       </div>
@@ -102,7 +138,7 @@
       <script src="{{ relative }}/js/jquery.js"></script>
       <script src="{{ relative }}/js/bootstrap.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5464e7ee7ac9d108" async="async"></script>
+
 
 
     </body>
