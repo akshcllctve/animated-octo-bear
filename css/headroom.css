@@ -1,0 +1,3 @@
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out !important;}
+.headroom--unpinned {top: -100px !important;}
+.headroom--pinned {top: 0 !important;}

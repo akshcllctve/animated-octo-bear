@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
 
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,21 +13,21 @@
         <span class="icon-bar"></span>
       </button>
  
-      <span class="navbar-brand hidden-xs"></span>
+      <span class="navbar-brand"></span>
 
     </div>
 
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <ul class="nav navbar-nav navbar-right">
-     
+      
 <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{ site.baseurl }}/">HOME</a></li>   
  <li class="{% if page.url == '/about/' %}active{% endif %}"><a href="{{ site.baseurl }}/about/">ABOUT</a></li>  
         <li class="{% if page.url == '/shop.html' %}active{% endif %}"><a href="http://killian.corecommerce.com">SHOP</a></li>
            <li class="{% if page.url == '/storelocator/' %}active{% endif %}"><a href="{{ site.baseurl }}/storelocator/">FIND A RETAILER</a></li>
         <li class="{% if page.url == '/blog/' % or page.layout contains 'post' %}active{% endif %}"><a href="{{ site.baseurl }}/blog/">BLOG</a></li>
         <li class="{% if page.url == '/contact/' %}active{% endif %}"><a href="{{ site.baseurl }}/contact/">CONTACT</a></li>
-        
+ 
       </ul>
-    
+  
 
 </nav>
