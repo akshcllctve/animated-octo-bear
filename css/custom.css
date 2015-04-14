@@ -19,9 +19,9 @@ width: 100%;
 }
 
 .tops { 
-  position: fixed;
-     top: 12px;
-  right: 29px;
+  position: absolute;
+     top: -224px;
+  right: 5px;
   }
 
 a {
