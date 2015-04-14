@@ -1,0 +1,6 @@
+<video autoplay loop poster="/img/coverc.jpg" class="img-responsive">
+			<source src="/img/videoc.webmsd.webm" type="video/webm">
+			<source src="/img/videoc.mp4.mp4" type="video/mp4" class="img-responsive">
+			</video> <script>
+    			document.getElementById('vid').play();
+			</script>
